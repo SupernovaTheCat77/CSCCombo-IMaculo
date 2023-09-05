@@ -15,7 +15,7 @@ public class HelloWorld {
 		int feet = num1 / num2;
 		int inches = num1 % num2;
 		
-		System.out.println("The item is " + feet + " feet and " + inches + " inches.");
+		System.out.println("At originally " + num1 + " inches, the item is " + feet + " feet and " + inches + " inches.");
 		
 	}
 
