@@ -18,12 +18,13 @@ public class TemperatureConversion {
 		double celsiusConvert = 5/9; //Multiply to get Fahrenheit to Celsius, not including the subtraction of 32
 		double kelvinConvert = 273.15; //Add to get Celsius to Kelvin
 		
-		System.out.print("Fahrenheit temperature: ");
+		System.out.print("Input temperature in Fahrenheit: ");
 		fahren = input.nextDouble();
 		celsius = (fahren - 32) * celsiusConvert;
 		kelvin = celsius + kelvinConvert;
 		
-		System.out.println("Celsius equivalent: " + celsius + "\nKelvin equivalent: " + kelvin);
-		
+		System.out.printf("\nFahrenheit: %.2f", fahren);
+		System.out.printf("\nCelsius: %.2f", celsius);
+		System.out.printf("\nKelvin: %.2f", kelvin);
 	}
 }
