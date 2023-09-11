@@ -22,7 +22,7 @@ public class GuessingGame {
 		int outCount = 0;
 		int trueCount = 1;
 		
-		System.out.println("Random number (debugging): " + randInt + "\n");
+		//System.out.println("Random number (debugging): " + randInt + "\n");
 		
 		System.out.print("Guess a random number between 0 and " + trueUpperbound + ": ");
 		guess = input.nextInt();
@@ -57,7 +57,7 @@ public class GuessingGame {
 			System.out.println("Correct! The number was " + randInt + " and " + trueCount + " guesses were made, " + count + " of which were in-bounds.");
 		}
 		
-		System.out.println("\nRandom number (debugging): " + randInt);
+		//System.out.println("\nRandom number (debugging): " + randInt);
 		
 	}
 }
