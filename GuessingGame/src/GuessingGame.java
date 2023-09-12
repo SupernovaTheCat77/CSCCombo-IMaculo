@@ -30,8 +30,8 @@ public class GuessingGame {
 		while (guess != randInt) {
 			if (guess < 0 || guess > 100) {
 				System.out.println("Please guess within the bounds of 0 and " + trueUpperbound + ".");
-				count = count - 1;
-				outCount = outCount + 1;
+				count --;
+				outCount ++;
 			}
 			else if (guess > randInt) {
 				System.out.println("The number has a lower value.");
@@ -42,7 +42,7 @@ public class GuessingGame {
 			System.out.print("\nGuess again: ");
 			guess = input.nextInt();
 			
-			count = count + 1;
+			count ++;
 		}
 		
 		trueCount = count + outCount;
