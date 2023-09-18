@@ -8,23 +8,41 @@
 import java.util.Scanner;
 
 public class TemperatureConversion {
-
+	
 	public static void main(String[] args) {
 		
-		Scanner input = new Scanner(System.in);
 		double fahren;
 		double celsius;
 		double kelvin;
-		double celsiusConvert = 5/9; //Multiply to get Fahrenheit to Celsius, not including the subtraction of 32
-		double kelvinConvert = 273.15; //Add to get Celsius to Kelvin
+		
+		fahren = getTemp();
+		celsius = findCelsius(fahren);
+		kelvin = findKelvin(fahren, celsius);
+		outTemp(fahren, celsius, kelvin);
+	}
+	
+	public static void outTemp(double fTemp, double cTemp, double kTemp) {
+		System.out.printf("\nFahrenheit: %.2f", fTemp);
+		System.out.printf("\nCelsius: %.2f", cTemp);
+		System.out.printf("\nKelvin: %.2f", kTemp);
+	}
+	
+	public static double getTemp() {
+		Scanner input = new Scanner(System.in);
+		double fTemp;
 		
 		System.out.print("Input temperature in Fahrenheit: ");
-		fahren = input.nextDouble();
-		celsius = (fahren - 32) * celsiusConvert;
-		kelvin = celsius + kelvinConvert;
-		
-		System.out.printf("\nFahrenheit: %.2f", fahren);
-		System.out.printf("\nCelsius: %.2f", celsius);
-		System.out.printf("\nKelvin: %.2f", kelvin);
+		fTemp = input.nextDouble();
+		return fTemp;
+	}
+	
+	public static double findCelsius(double fTemp) {
+		double celsius = (fTemp - 32) * 5/9;
+		return celsius;
+	}
+	
+	public static double findKelvin(double fTemp, double cTemp) {
+		double kelvin = cTemp + 273.15;
+		return kelvin;
 	}
 }

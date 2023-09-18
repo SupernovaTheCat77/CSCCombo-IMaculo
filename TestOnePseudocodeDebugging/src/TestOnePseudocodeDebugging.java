@@ -1,7 +1,7 @@
 /**************************************************************************************************
- *  This is a practice program, it reads Fahrenheit temperatures and outputs Celsius and Kelvin.  *
+ *  This is a couple programs originally written in pseudocode for the first test in this class.  *
  *  Written by: Izzy Maculo                                                                       *
- *  Date: 9/8/23                                                                                  *
+ *  Date: 9/18/23                                                                                 *
  *************************************************************************************************/
 
 import java.util.Scanner;
@@ -11,18 +11,18 @@ public class TestOnePseudocodeDebugging {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		String another = "y";
+		String another = "Y";
 		int operation;
 		double num1;
 		double num2;
 		double ans;
 
-		while (another == "y" || another == "Y") {
-			System.out.println("What operator would you like to use? (1: +, 2: -, 3: *, 4: /): ");
+		while (another.equals("Y")) {
+			System.out.print("What operator would you like to use? (1: +, 2: -, 3: *, 4: /): ");
 			operation = input.nextInt();
-			System.out.println("First number?: ");
+			System.out.print("First number?: ");
 			num1 = input.nextDouble();
-			System.out.println("Second number?: ");
+			System.out.print("Second number?: ");
 			num2 = input.nextDouble();
 			
 			if (operation == 1) {
@@ -38,8 +38,9 @@ public class TestOnePseudocodeDebugging {
 				ans = (num1 / num2);
 			}
 			
-			System.out.println("The answer is " + ans + ". Another operation (Y/N)?: ");
+			System.out.print("The answer is " + ans + ". Another operation (Y/N)?: ");
 			another = input.next();
+			another = another.toUpperCase();
 		}
 		
 		System.out.println("Thank you for using this calculator program.");
