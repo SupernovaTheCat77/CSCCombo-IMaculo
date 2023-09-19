@@ -1,4 +1,10 @@
 
+/**********************************************************************************************************
+ *  This is a program that is the result of a team project to create a calculator program using methods.  *
+ *  Written by: Izzy, Abian, Colin, and Kai                                                               *
+ *  Date: 9/19/23                                                                                         *
+ *********************************************************************************************************/
+
 public class MethodTeamKai {
 	
 	

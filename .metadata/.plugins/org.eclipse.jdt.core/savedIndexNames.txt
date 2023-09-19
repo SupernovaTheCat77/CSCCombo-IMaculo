@@ -3,7 +3,6 @@ INDEX VERSION 1.134+C:\Users\S02590993\CSCCombo-IMaculo\.metadata\.plugins\org.e
 2077050353.index
 4092975695.index
 3024131855.index
-459247406.index
 778716030.index
 623232026.index
 2440097375.index
