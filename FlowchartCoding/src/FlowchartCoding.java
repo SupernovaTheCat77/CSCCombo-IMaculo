@@ -1,4 +1,4 @@
-//Testing GitHub and Eclipse on home computer! And now more test
+//Testing GitHub and Eclipse, test again
 
 /************************************************************************************************************
  *  This is a practice program, it runs through Flowcharts 1 + 2 done in this class, but with real code.    *
