@@ -55,7 +55,7 @@ public class MultiplicationTable {
 			System.out.print(" ");
 		}
 		
-		System.out.print((k+1)*(l+1));
+		System.out.print(value);
 		
 		for (int i = 0; i < ((space/2)); i++) {
 			System.out.print(" ");
