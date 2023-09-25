@@ -1,4 +1,10 @@
 
+/****************************************************************************************************************
+ *  This program asks for two numbers and spacing, then creates a multiplication table using that information.  *
+ *  Written by: Izzy Maculo                                                                                     *
+ *  Date: 9/23/23                                                                                               *
+ ***************************************************************************************************************/
+
 import java.util.Scanner;
 
 public class MultiplicationTable {
