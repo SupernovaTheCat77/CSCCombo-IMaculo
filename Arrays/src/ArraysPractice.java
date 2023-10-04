@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Arrays {
+public class ArraysPractice {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
@@ -31,6 +31,11 @@ public class Arrays {
 			System.out.print(strLengths[l] + " ");
 		}
 		
+	}
+
+	public static boolean binarySearch(int[] commonFull, int i) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
