@@ -5,12 +5,15 @@ public class Car {
 	private int mileage;
 	private double amtOfGas;
 	private Wheel[] wheels;
+	private SteeringWheel steeringWheel;
 	
 	//Constructors
 	public Car() {
 		color = "Black";
 		mileage = 1000;
 		amtOfGas = 50;
+		wheels = new Wheel[4];
+		steeringWheel = new SteeringWheel();
 	}
 	
 	public Car(String color, int mileage, double amtOfGas, int numWheels) {
@@ -18,7 +21,9 @@ public class Car {
 		this.mileage = mileage;
 		this.amtOfGas = amtOfGas;
 		wheels = new Wheel[numWheels];
+		steeringWheel = new SteeringWheel();
 	}
+	
 	
 	//Getters
 	public String getColor() {
@@ -36,6 +41,11 @@ public class Car {
 	public Wheel[] getWheels() {
 		return wheels;
 	}
+	
+	public SteeringWheel getSteeringWheel() {
+		return steeringWheel;
+	}
+	
 	
 	//Setters
 	public void setColor(String color) {
@@ -56,6 +66,11 @@ public class Car {
 		}
 	}
 	
+	public void setSteeringWheel(int swRadius, String swMaterial) {
+		steeringWheel = new SteeringWheel(swRadius, swMaterial);
+	}
+	
+	
 	//Methods
 	public void drive(int milesDriven) {
 		mileage += milesDriven;
@@ -64,9 +79,12 @@ public class Car {
 
 	@Override
 	public String toString() {
-		return "OF CAR:\nColor: " + color + "\nMileage: " + mileage + "\nAmount of gas: " + amtOfGas + "\n\nOF WHEELS:\nRadius: ";
+		Wheel[]wls = getWheels();
+		return "CAR:\nColor: " + color + "\nMileage: " + mileage
+				+ "\nAmount of gas: " + amtOfGas + "\n\nWHEELS:\nAmount: " + wls.length
+				+ "\nRadius: " + wls[0].getRadius() + "\nMaterial: " + wls[0].getMaterial()
+				+ "\n\nSTEERING WHEEL:\nRadius: " + steeringWheel.getRadius() + "\nMaterial: " + steeringWheel.getMaterial()
+				+ "\n\n";
 	}
 	
-	
-
 }

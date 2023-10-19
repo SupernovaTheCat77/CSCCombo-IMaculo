@@ -1,14 +1,14 @@
 
-public class Wheel {
+public class SteeringWheel {
 	private int radius;
 	private String material;
 	
-	public Wheel() {
-		radius = 16;
-		material = "Steel";
+	public SteeringWheel() {
+		radius = 10;
+		material = "Leather";
 	}
 	
-	public Wheel(int radius, String material) {
+	public SteeringWheel(int radius, String material) {
 		this.radius = radius;
 		this.material = material;
 	}
@@ -23,8 +23,6 @@ public class Wheel {
 
 	@Override
 	public String toString() {
-		return "OF WHEELS:\nRadius: " + radius + "\nMaterial: " + material + "\n";
+		return "OF STEERING WHEEL:\nRadius: " + radius + "\nMaterial: " + material + "\n";
 	}
-	
-	
 }
