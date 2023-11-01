@@ -1,13 +1,31 @@
+import java.util.Arrays;
+import java.util.Random;
 
 public class Deck {
+	private final int NUM_OF_CARDS = 52;
+	Card[] cards = new Card[NUM_OF_CARDS];
+	private static Random rand = new Random();
 	
-	public static void shuffle(Deck deck) {
-		Card[] cards = deck.getCards();
+	public Deck() {
+		int count = 0;
+		for (int i = 0; i < 4; i++) {
+			for (int j = 1; j < 14; j++, count++) {
+				cards[count] = new Card(j, i);
+			}
+		}
+	}
+	
+	public Card[] getCards() {
+		return cards;
+	}
+	public void setCards(Card[] cards) {
+		this.cards = cards;
+	}
+	
+	public void shuffle() {
 		for (int i = 0; i < cards.length; i++) {
 			int index = rand.nextInt(cards.length);
-			Card temp = cards[i];
-			cards[i] = cards[index];
-			cards[index] = temp;
+			swap(i, index);
 		}
 	}
 	
@@ -17,18 +35,24 @@ public class Deck {
 		cards[b] = temp;
 	}
 	
-	public void bubbleSort(cards) {
+	public void bubbleSort(Deck decks) {
 		for (int i = 0; i < cards.length-1; i++) {
 			for (int j = 1; j < cards.length-i; j++) {
 				if (cards[j-1].compareTo(cards[j]) > 0) {
-					swap(cards, j-1, j);
+					swap(j-1, j);
 				}
 			}
 		}
 	}
 	
-	
-	
 	@Override
-	public String toString
+	public String toString() {
+		StringBuilder retStr = new StringBuilder();
+		for (int i = 0; i < cards.length; i++) {
+			retStr.append(cards[i].toString());
+			if (i != cards.length-1) retStr.append(", ");
+			if (i%6 == 0 && i != 0) retStr.append("\n");
+		}
+		return retStr.toString();
+	}
 }

@@ -3,7 +3,7 @@ public class Card {
 	private int rank;
 	private int suit;
 	private String[] SUITS = {"Hearts", "Clubs", "Diamonds", "Spades"};
-	private String[] RANKS = {null, "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Knight", "Queen", "King"};
+	private String[] RANKS = {null, "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
 	
 	public Card(int rank, int suit) {
 		this.rank = rank;
