@@ -30,18 +30,11 @@ public class Card {
 	}
 	
 	public int compareTo(Card oCard) {
-		if (suit > oCard.suit) {
-			return 5;
-		}
-		else if (suit < oCard.suit) {
-			return -5;
-		}
-		if (rank > oCard.rank) {
-			return 5;
-		}
-		else if (rank < oCard.rank) {
-			return -5;
-		}
+//		if (suit > oCard.suit) return 1;
+//		else if (suit < oCard.suit) return -1;
+		if (rank == oCard.rank) return 0; 
+		if (rank > oCard.rank || rank == 1) return 1;
+		else if (rank < oCard.rank || oCard.rank == 1) return -1;
 		return 0;
 	}
 }

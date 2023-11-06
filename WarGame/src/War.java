@@ -2,20 +2,56 @@
 public class War {
 
 	public static void main(String[] args) {
-//		Card card = new Card(1, 3);
-//		System.out.println(card + "\n\n");
-		
+	///// Setup
 		Deck deck = new Deck();
-		
-		System.out.println(deck + "\n\n");
 		deck.shuffle();
-		System.out.println(deck + "\n\n");
-//		deck.bubbleSort(deck);
-//		System.out.println(deck + "\n\n");
 		
-		Pile pile = new Pile();
-		pile.addCard(deck.getCards()[0]);
-		System.out.println(pile);
+		Pile p1 = new Pile();
+		Deck subDeck = deck.subDeck(0, 25);
+		p1.addDeck(subDeck);
+		
+		Pile p2 = new Pile();
+		subDeck = deck.subDeck(26, 51);
+		p2.addDeck(subDeck);
+		
+		Pile midPile = new Pile();
+		Pile p1Win = new Pile();
+		Pile p2Win = new Pile();
+		
+		
+	///// Logic
+		while(!p1.isEmpty() && !p2.isEmpty()) {
+			Card c1 = p1.popCard();
+			Card c2 = p2.popCard();
+			
+			midPile.addCard(c1);
+			midPile.addCard(c2);
+			
+			System.out.println(c1 + " vs. " + c2);
+			int cmpResult = c1.compareTo(c2);
+			
+			if (cmpResult > 0) {
+				System.out.println("Player 1 wins.\nCurrent score: " + p1Win.size() + " | " + p2Win.size() + "\n");
+				p1Win.addPile(midPile);
+			}
+			else if (cmpResult < 0) {
+				System.out.println("Player 2 wins.\nCurrent score: " + p1Win.size() + " | " + p2Win.size() + "\n");
+				p2Win.addPile(midPile);
+			}
+			else System.out.println("Tie!\n");
+		}
+		
+		
+	///// Cards spent
+		if (p1Win.size() > p2Win.size()) System.out.println("\nPlayer 1 wins!");
+		else if (p1Win.size() < p2Win.size()) System.out.println("\nPlayer 2 wins!");
+		else System.out.println("\nPlayer 1 and Player 2 have tied!");
+		
+	///// Testing
+		deck.bubbleSort(deck);
+		Card[] cards = deck.getCards();
+		Card a1 = cards[0];
+		Card a2 = cards[13];
+		System.out.println(a1 + " " + a2);
 	}
-
 }

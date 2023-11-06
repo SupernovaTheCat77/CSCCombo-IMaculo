@@ -8,11 +8,12 @@ public class Deck {
 	
 	public Deck() {
 		int count = 0;
-		for (int i = 0; i < 4; i++) {
-			for (int j = 1; j < 14; j++, count++) {
-				cards[count] = new Card(j, i);
-			}
-		}
+		for (int i = 0; i < 4; i++) 
+			for (int j = 1; j < 14; j++, count++) cards[count] = new Card(j, i);
+	}
+	
+	public Deck(int numCards) {
+		cards = new Card[numCards];
 	}
 	
 	public Card[] getCards() {
@@ -35,14 +36,18 @@ public class Deck {
 		cards[b] = temp;
 	}
 	
-	public void bubbleSort(Deck decks) {
-		for (int i = 0; i < cards.length-1; i++) {
-			for (int j = 1; j < cards.length-i; j++) {
-				if (cards[j-1].compareTo(cards[j]) > 0) {
-					swap(j-1, j);
-				}
-			}
+	public void bubbleSort(Deck deck) {
+		for (int i = 0; i < cards.length-1; i++) 
+			for (int j = 1; j < cards.length-i; j++) 
+				if (cards[j-1].compareTo(cards[j]) > 0) swap(j-1, j);
+	}
+	
+	public Deck subDeck(int start, int end) {
+		Deck subDeck = new Deck(end-start);
+		for (int i = start, j = 0; i < end; i++, j++) {
+			subDeck.cards[j] = cards[i];
 		}
+		return subDeck;
 	}
 	
 	@Override
