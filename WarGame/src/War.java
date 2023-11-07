@@ -47,11 +47,6 @@ public class War {
 		else if (p1Win.size() < p2Win.size()) System.out.println("\nPlayer 2 wins!");
 		else System.out.println("\nPlayer 1 and Player 2 have tied!");
 		
-	///// Testing
-		deck.bubbleSort(deck);
-		Card[] cards = deck.getCards();
-		Card a1 = cards[0];
-		Card a2 = cards[13];
-		System.out.println(a1 + " " + a2);
+	
 	}
 }
