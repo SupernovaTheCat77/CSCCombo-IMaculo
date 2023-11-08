@@ -7,6 +7,13 @@ public class Horse extends Animal {
 		this.speed = speed;
 	}
 	
+	public double getSpeed() {
+		return speed;
+	}
+	public void setSpeed(double speed) {
+		this.speed = speed;
+	}
+
 	public String makeNoise() {
 		return "Neigh.";
 	}

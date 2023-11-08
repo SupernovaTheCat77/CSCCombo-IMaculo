@@ -8,6 +8,13 @@ public class Dog extends Animal {
 		this.drool = drool;
 	}
 	
+	public boolean isDrool() {
+		return drool;
+	}
+	public void setDrool(boolean drool) {
+		this.drool = drool;
+	}
+
 	public String makeNoise() {
 		return "Woof.";
 	}
