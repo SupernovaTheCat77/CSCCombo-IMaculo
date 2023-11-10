@@ -24,8 +24,8 @@ public class CSclasses {
 	
 	public static void printCourse(Course course) {
 		System.out.println("Course: " + course.getCourseNum()
-		+ "\nNumber of students: " + course.getNumStud()
-		+ "\nMaximum number of students: " + course.getMaxStud());
+			+ "\nNumber of students: " + course.getNumStud()
+			+ "\nMaximum number of students: " + course.getMaxStud());
 		if (course instanceof InPersonCourse == true) System.out.println("Room number: " + ((InPersonCourse)course).getRoomNum() + "\n");
 		if (course instanceof FullRemoteCourse == true) System.out.println("Instructor email: " + ((FullRemoteCourse)course).getEmail() + "\n");
 		if (course instanceof RealTimeRemoteCourse == true) System.out.println("Zoom link: " + ((RealTimeRemoteCourse)course).getZoomLink() + "\n");
