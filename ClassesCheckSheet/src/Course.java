@@ -3,14 +3,16 @@ public class Course {
 	String courseNum;
 	int numStud;
 	int maxStud;
+	int credits;
 	
 	public Course() {
 	}
 
-	public Course(String courseNum, int numStud, int maxStud) {
+	public Course(String courseNum, int numStud, int maxStud, int credits) {
 		this.courseNum = courseNum;
 		this.numStud = numStud;
 		this.maxStud = maxStud;
+		this.credits = credits;
 	}
 
 	public String getCourseNum() {
@@ -31,10 +33,16 @@ public class Course {
 	public void setMaxStud(int maxStud) {
 		this.maxStud = maxStud;
 	}
+	public int getCredits() {
+		return credits;
+	}
+	public void setCredits(int credits) {
+		this.credits = credits;
+	}
 
 	@Override
 	public String toString() {
-		return "Course: " + courseNum + "\nNumber of students: " + numStud + "\nMaximum number of students: " + maxStud;
+		return "Course: " + courseNum + "\nCredits: " + credits + "\nMaximum number of students: " + maxStud + "\nNumber of students: " + numStud;
 	}
 	
 	

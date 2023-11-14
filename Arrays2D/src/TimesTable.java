@@ -21,6 +21,18 @@ public class TimesTable {
 		}
 		return table;
 	}
+	
+	public static void printTimesTable(int[][] table) {
+		int spacing = (Integer.toString(table.length*table[0].length)).length()+1; 
+		String str = "";
+		for(int row = 0; row < table.length; row++) {
+			for(int col = 0; col < table[row].length; col++) {
+				str += String.format("%" + (spacing-(spacing*2)) + "s", table[row][col]);
+			}
+			str += "\n";
+		}
+		System.out.println(str);
+	}
 
 	@Override
 	public String toString() {

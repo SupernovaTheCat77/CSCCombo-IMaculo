@@ -5,8 +5,8 @@ public class RealTimeRemoteCourse extends OnlineCourse {
 	public RealTimeRemoteCourse() {
 	}
 
-	public RealTimeRemoteCourse(String courseNum, int numStud, int maxStud, String zoomLink) {
-		super(courseNum, numStud, maxStud);
+	public RealTimeRemoteCourse(String courseNum, int numStud, int maxStud, String zoomLink, int credits) {
+		super(courseNum, numStud, maxStud, credits);
 		this.zoomLink = zoomLink;
 	}
 
@@ -19,6 +19,6 @@ public class RealTimeRemoteCourse extends OnlineCourse {
 	
 	@Override
 	public String toString() {
-		return "Course: " + courseNum + "\nNumber of students: " + numStud + "\nMaximum number of students: " + maxStud + "\nZoom link: " + zoomLink;
+		return "Course: " + courseNum + "\nCredits: " + credits + "\nMaximum number of students: " + maxStud + "\nNumber of students: " + numStud + "\nZoom link: " + zoomLink;
 	}
 }

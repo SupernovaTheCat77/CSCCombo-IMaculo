@@ -5,8 +5,8 @@ public class FullRemoteCourse extends OnlineCourse {
 	public FullRemoteCourse() {
 	}
 
-	public FullRemoteCourse(String courseNum, int numStud, int maxStud, String email) {
-		super(courseNum, numStud, maxStud);
+	public FullRemoteCourse(String courseNum, int numStud, int maxStud, String email, int credits) {
+		super(courseNum, numStud, maxStud, credits);
 		this.email = email;
 	}
 
@@ -19,6 +19,6 @@ public class FullRemoteCourse extends OnlineCourse {
 	
 	@Override
 	public String toString() {
-		return "Course: " + courseNum + "\nNumber of students: " + numStud + "\nMaximum number of students: " + maxStud + "\nInstructor email: " + email;
+		return "Course: " + courseNum + "\nCredits: " + credits + "\nMaximum number of students: " + maxStud + "\nNumber of students: " + numStud + "\nInstructor email: " + email;
 	}
 }
