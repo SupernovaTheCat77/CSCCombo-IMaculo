@@ -9,8 +9,6 @@ import java.util.Scanner;
  * @date 11/15/2023
  */
 
-
-
 public class TTT {
 	public static void main(String[] args) {
 		char[][] boxes = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
