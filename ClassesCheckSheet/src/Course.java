@@ -39,6 +39,10 @@ public class Course {
 	public void setCredits(int credits) {
 		this.credits = credits;
 	}
+	
+	public String dbString() {
+		return "Course: " + courseNum + "\nCredits: " + credits + "\nMaximum number of students: " + maxStud + "\nNumber of students: " + numStud + "\n";
+	}
 
 	@Override
 	public String toString() {

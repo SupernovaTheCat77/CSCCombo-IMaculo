@@ -3,7 +3,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class FileHandling {
+public class FileWrite {
 
 	public static void main(String[] args) throws IOException {
 		File myFile = new File("test.txt");
@@ -17,13 +17,12 @@ public class FileHandling {
 			System.out.println("File already exists in directory");
 		}
 		
-		PrintWriter printer = new PrintWriter(new FileOutputStream(myFile.getName(), true));
+		PrintWriter printer = new PrintWriter(new FileOutputStream(myFile.getName(), false));
 		
 		printer.println("First test with PrintWriter!");
-		printer.println("Another line");
-		printer.println("Another line except using\na different method!");
 		printer.flush();
 		printer.println("Just did a flush! :)");
-		printer.flush();
+		printer.close();
 	}
+
 }

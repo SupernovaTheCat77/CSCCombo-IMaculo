@@ -18,6 +18,11 @@ public class RealTimeRemoteCourse extends OnlineCourse {
 	}
 	
 	@Override
+	public String dbString() {
+		return "Course: " + courseNum + "\nCredits: " + credits + "\nMaximum number of students: " + maxStud + "\nNumber of students: " + numStud + "\nZoom link: " + zoomLink + "\n";
+	}
+	
+	@Override
 	public String toString() {
 		return "Course: " + courseNum + "\nCredits: " + credits + "\nMaximum number of students: " + maxStud + "\nNumber of students: " + numStud + "\nZoom link: " + zoomLink;
 	}

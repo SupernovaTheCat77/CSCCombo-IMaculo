@@ -18,6 +18,11 @@ public class InPersonCourse extends Course {
 	}
 	
 	@Override
+	public String dbString() {
+		return "Course: " + courseNum + "\nCredits: " + credits + "\nMaximum number of students: " + maxStud + "\nNumber of students: " + numStud + "\nRoom number: " + roomNum + "\n";
+	}
+	
+	@Override
 	public String toString() {
 		return "Course: " + courseNum + "\nCredits: " + credits + "\nMaximum number of students: " + maxStud + "\nNumber of students: " + numStud + "\nRoom number: " + roomNum;
 	}
