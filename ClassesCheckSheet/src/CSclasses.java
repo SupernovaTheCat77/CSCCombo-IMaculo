@@ -4,10 +4,24 @@ import java.util.List;
 import java.util.Scanner;
 
 public class CSclasses {
-
 	public static void main(String[] args) throws FileNotFoundException {
 		Scanner input = new Scanner(System.in);
 		List<Course> courseList = new ArrayList<>();
+		
+		courseList.add(new InPersonCourse("PSY101", 12, 20, 214, 3));
+		courseList.add(new FullRemoteCourse("CSC101", 5, 32, 54, "instructor@frontrange.cccs.edu"));
+		courseList.add(new RealTimeRemoteCourse("ENG101", 4, 24, 30, "https://zoom.123456789.com"));
+		printCourses(courseList);
+		
+		FileWriter fileWriter = new FileWriter();
+		for (Course course : courseList) fileWriter.writeToFile(course);
+		fileWriter.close();
+		
+		FileReader fileReader = new FileReader();
+		List<Course> courses = fileReader.readCoursesFromFile();
+		for (Course course : courses) {
+			System.out.println(course.toString());
+		}
 		
 //		String another = "y";
 //		int courseType = 1;
@@ -62,17 +76,7 @@ public class CSclasses {
 //		}
 //		System.out.println();
 //		printCourses(courseList);
-		
-		courseList.add(new InPersonCourse("PSY101", 12, 20, 214, 3));
-		courseList.add(new FullRemoteCourse("CSC101", 32, 54, "instructor@frontrange.cccs.edu", 5));
-		courseList.add(new RealTimeRemoteCourse("ENG101", 24, 30, "https://zoom.123456789.com", 4));
-		
-		printCourses(courseList);
-		
-		FileWriter fileWriter = new FileWriter();
-		for (Course course : courseList) fileWriter.writeToFile(course);
-		fileWriter.close();
-		
+//		
 //		printCourse(courseList.get(0));
 //		printCourse(courseList.get(1));
 //		printCourse(courseList.get(2));

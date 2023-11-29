@@ -41,7 +41,7 @@ public class Course {
 	}
 	
 	public String dbString() {
-		return "Course: " + courseNum + "\nCredits: " + credits + "\nMaximum number of students: " + maxStud + "\nNumber of students: " + numStud + "\n";
+		return  "Course" + "," + courseNum + "," + credits + "," + maxStud + "," + numStud + "\n";
 	}
 
 	@Override

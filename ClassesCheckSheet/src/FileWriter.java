@@ -12,6 +12,10 @@ public class FileWriter {
 	}
 	
 	public void writeToFile(Course course) {
+		printer.print("Course type" + "," + "Course" + "," + "Credits" + "," + "Max students" + "," + "Number of students");
+		if (course instanceof FullRemoteCourse == true) printer.println("," + "Email");
+		else if (course instanceof InPersonCourse == true) printer.println("," + "Room number");
+		else if (course instanceof RealTimeRemoteCourse == true) printer.println("," + "Zoom link");
 		printer.println(course.dbString());
 	}
 	

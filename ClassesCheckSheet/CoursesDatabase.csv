@@ -1,18 +1,9 @@
-Course: PSY101
-Credits: 3
-Maximum number of students: 20
-Number of students: 12
-Room number: 214
+Course type,Course,Credits,Max students,Number of students,Room number
+In-Person,PSY101,12,214,20,3
 
-Course: CSC101
-Credits: 5
-Maximum number of students: 54
-Number of students: 32
-Instructor email: instructor@frontrange.cccs.edu
+Course type,Course,Credits,Max students,Number of students,Email
+Full Remote,CSC101,32,5,54,instructor@frontrange.cccs.edu
 
-Course: ENG101
-Credits: 4
-Maximum number of students: 30
-Number of students: 24
-Zoom link: https://zoom.123456789.com
+Course type,Course,Credits,Max students,Number of students,Zoom link
+Real-Time Remote,ENG101,24,4,30,https://zoom.123456789.com
 

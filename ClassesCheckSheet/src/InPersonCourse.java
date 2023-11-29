@@ -5,7 +5,7 @@ public class InPersonCourse extends Course {
 	public InPersonCourse() {
 	}
 
-	public InPersonCourse(String courseNum, int numStud, int maxStud, int roomNum, int credits) {
+	public InPersonCourse(String courseNum, int credits, int numStud, int maxStud, int roomNum) {
 		super(courseNum, numStud, maxStud, credits);
 		this.roomNum = roomNum;
 	}
@@ -19,11 +19,11 @@ public class InPersonCourse extends Course {
 	
 	@Override
 	public String dbString() {
-		return "Course: " + courseNum + "\nCredits: " + credits + "\nMaximum number of students: " + maxStud + "\nNumber of students: " + numStud + "\nRoom number: " + roomNum + "\n";
+		return "In-Person" + "," + courseNum + "," + credits + "," + maxStud + "," + numStud + "," + roomNum + "\n";
 	}
 	
 	@Override
 	public String toString() {
-		return "Course: " + courseNum + "\nCredits: " + credits + "\nMaximum number of students: " + maxStud + "\nNumber of students: " + numStud + "\nRoom number: " + roomNum;
+		return "In-Person Course: " + courseNum + "\nCredits: " + credits + "\nMaximum number of students: " + maxStud + "\nNumber of students: " + numStud + "\nRoom number: " + roomNum;
 	}
 }
