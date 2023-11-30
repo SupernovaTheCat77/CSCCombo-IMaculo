@@ -6,14 +6,15 @@ import java.util.Scanner;
 
 public class FileReader {
 	private Scanner input;
+	private String dbFile = "CoursesDatabase.csv";
 	public FileReader() throws FileNotFoundException {
-		File courseFile = new File("dbFile");
+		File courseFile = new File(dbFile);
 		input = new Scanner(courseFile);
 		
-		while (input.hasNextLine()) {
-			String line = input.nextLine();
-			System.out.println(line);
-		}
+//		while (input.hasNextLine()) {
+//			String line = input.nextLine();
+//			System.out.println(line);
+//		}
 	}
 
 	public Course readFromFile() throws FileNotFoundException {
@@ -32,7 +33,7 @@ public class FileReader {
 				course = new InPersonCourse(tokens[1], Integer.parseInt(tokens[2]), Integer.parseInt(tokens[3]), Integer.parseInt(tokens[4]), Integer.parseInt(tokens[5]));
 			}
 			if (tokens[0].equals("Real-Time Remote")) {
-				course = new InPersonCourse(tokens[1], Integer.parseInt(tokens[2]), Integer.parseInt(tokens[3]), Integer.parseInt(tokens[4]), Integer.parseInt(tokens[5]));
+				course = new RealTimeRemoteCourse(tokens[1], Integer.parseInt(tokens[2]), Integer.parseInt(tokens[3]), Integer.parseInt(tokens[4]), tokens[5]);
 			}
 			return course;
 		}
@@ -42,10 +43,19 @@ public class FileReader {
 	}
 	
 	public List<Course> readCoursesFromFile() throws FileNotFoundException {
-		List<Course> courseList = new ArrayList<>();
+		List<Course> courses = new ArrayList<>();
 		while (input.hasNextLine()) {
-			courseList.add(readFromFile());
+			courses.add(readFromFile());
 		}
-		return courseList;
+		courses = FileReader.sortCourses(courses);
+		return courses;
+	}
+	
+	private static List<Course> sortCourses(List<Course> courses) {
+		List<Course> sortedCourses = new ArrayList<>();
+		for (int i = 0; i < courses.size(); i++) {
+			if (((courses.get(i)).getCredits()) > 0) sortedCourses.add(courses.get(i));
+		}
+		return sortedCourses;
 	}
 }

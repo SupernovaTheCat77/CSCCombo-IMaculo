@@ -13,15 +13,15 @@ public class CSclasses {
 		courseList.add(new RealTimeRemoteCourse("ENG101", 4, 24, 30, "https://zoom.123456789.com"));
 		printCourses(courseList);
 		
+		System.out.println("\n\nFollowing courses are done after creating a file and then outputted again:\n");
+		
 		FileWriter fileWriter = new FileWriter();
 		for (Course course : courseList) fileWriter.writeToFile(course);
 		fileWriter.close();
 		
 		FileReader fileReader = new FileReader();
 		List<Course> courses = fileReader.readCoursesFromFile();
-		for (Course course : courses) {
-			System.out.println(course.toString());
-		}
+		printCourses(courses);
 		
 //		String another = "y";
 //		int courseType = 1;
