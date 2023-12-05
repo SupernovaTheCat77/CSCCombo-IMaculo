@@ -1,22 +1,7 @@
 
 public class War {
 
-	public static void main(String[] args) {
-	/////Testing
-		Deck testDeck = new Deck();
-		System.out.println("OG\n" + testDeck.toString());
-		testDeck.shuffle();
-		System.out.println("\n\nShuffled\n" + testDeck.toString());
-		testDeck.selSort();
-		System.out.println("\n\nselSort\n" + testDeck.toString());
-		testDeck.shuffle();
-		System.out.println("\n\nShuffled\n" + testDeck.toString());
-		testDeck.bubbleSort();
-		System.out.println("\n\nbubbleSort\n" + testDeck.toString() + "\n\n");
-		
-		
-		
-		
+	public static void main(String[] args) {	
 	///// Setup
 		Deck deck = new Deck();
 		deck.shuffle();

@@ -37,19 +37,21 @@ public class Deck {
 	}
 	
 	public void bubbleSort() {
-		for (int i = 0; i < cards.length-1; i++) 
-			for (int j = 1; j < cards.length; j++) 
-				if (cards[j-1].compareTo(cards[j]) > 0) swap(j-1, j);
+		for (int i = 0; i < cards.length-1; i++) {
+			for (int j = 1; j < cards.length; j++) {
+				if (cards[j-1].sortCompare(cards[j]) > 0) swap(j-1, j);
+			}
+		}
 	}
 	
 	public void selSort() {
 		  for (int i = 0; i < cards.length-1; i++) {
 		    int largest = 0;
 		    for (int j = 1; j < cards.length-i; j++)
-		      if (cards[j].compareTo(cards[largest]) > 0) largest = j;
+		      if (cards[j].sortCompare(cards[largest]) > 0) largest = j;
 		    swap(largest, cards.length-i-1);
 		  }
-		}
+	}
 	
 	public Deck subDeck(int start, int end) {
 		Deck subDeck = new Deck(end-start);

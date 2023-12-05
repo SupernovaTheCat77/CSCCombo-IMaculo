@@ -27,12 +27,17 @@ public class Card {
 		return RANKS[rank] + " of " + SUITS[suit];
 	}
 	
-	public int compareTo(Card oCard) {
-//		if (suit > oCard.suit) return 1;
-//		else if (suit < oCard.suit) return -1;
-		if (rank == oCard.rank) return 0; 
-		if (rank > oCard.rank || rank == 1) return 1;
-		else if (rank < oCard.rank || oCard.rank == 1) return -1;
+	public int sortCompare(Card cCard) {
+		if (suit > cCard.suit) return 1;
+		else if (suit < cCard.suit) return -1;
+		else if (rank > cCard.rank) return 1;
+		else return -1;
+	}
+	
+	public int compareTo(Card cCard) {
+		if (rank == cCard.rank) return 0; 
+		if (rank > cCard.rank || rank == 1) return 1;
+		else if (rank < cCard.rank || cCard.rank == 1) return -1;
 		return 0;
 	}
 }
