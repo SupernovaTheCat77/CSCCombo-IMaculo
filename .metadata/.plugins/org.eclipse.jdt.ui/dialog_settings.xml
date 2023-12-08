@@ -25,4 +25,269 @@
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
+	<section name="RefactoringWizard.preview">
+		<item key="width" value="600"/>
+		<item key="height" value="400"/>
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item key="updateSimilarElements" value="false"/>
+		<item key="updateSimilarElementsMatchStrategy" value="1"/>
+		<item key="updateTextualMatches" value="false"/>
+	</section>
+	<section name="SourceActionDialog.methods">
+		<item key="LimitElements" value="false"/>
+		<item key="IgnoreDefault" value="true"/>
+		<item key="StringStyle" value="0"/>
+		<item key="LimitValue" value="10"/>
+		<item key="SkipNull" value="false"/>
+		<item key="ToStringTemplateSelected" value="0"/>
+		<item key="FinalModifier" value="false"/>
+		<item key="SynchronizedModifier" value="false"/>
+		<item key="Comments" value="false"/>
+		<item key="VisibilityModifier" value="1"/>
+	</section>
+	<section name="DialogBounds_GenerateToStringDialog">
+		<item key="DIALOG_X_ORIGIN" value="710"/>
+		<item key="DIALOG_Y_ORIGIN" value="68"/>
+		<item key="DIALOG_WIDTH" value="516"/>
+		<item key="DIALOG_HEIGHT" value="691"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="SourceActionDialog.constructors">
+		<item key="VisibilityModifier" value="1"/>
+		<item key="FinalModifier" value="false"/>
+		<item key="SynchronizedModifier" value="false"/>
+		<item key="Comments" value="false"/>
+	</section>
+	<section name="GenerateConstructorUsingFieldsSelectionDialog">
+		<item key="OmitCallToSuper" value="false"/>
+	</section>
+	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
+		<item key="DIALOG_X_ORIGIN" value="710"/>
+		<item key="DIALOG_Y_ORIGIN" value="76"/>
+		<item key="DIALOG_WIDTH" value="517"/>
+		<item key="DIALOG_HEIGHT" value="678"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="AddGetterSetterDialog">
+		<item key="SortOrdering" value="false"/>
+		<item key="RemoveFinal" value="false"/>
+	</section>
+	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
+		<item key="DIALOG_X_ORIGIN" value="705"/>
+		<item key="DIALOG_Y_ORIGIN" value="64"/>
+		<item key="DIALOG_WIDTH" value="526"/>
+		<item key="DIALOG_HEIGHT" value="696"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="AddUnimplementedConstructorsDialog">
+		<item key="OmitCallToSuper" value="false"/>
+	</section>
+	<section name="DialogBounds_AddUnimplementedConstructorsDialog">
+		<item key="DIALOG_X_ORIGIN" value="710"/>
+		<item key="DIALOG_Y_ORIGIN" value="110"/>
+		<item key="DIALOG_WIDTH" value="517"/>
+		<item key="DIALOG_HEIGHT" value="627"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.typehierarchy.QuickHierarchy">
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_WIDTH" value="350"/>
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_HEIGHT" value="306"/>
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE" value="true"/>
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION" value="false"/>
+	</section>
+	<section name="JavadocWizardDialog">
+		<item key="DIALOG_X_ORIGIN" value="526"/>
+		<item key="DIALOG_Y_ORIGIN" value="150"/>
+		<item key="DIALOG_WIDTH" value="885"/>
+		<item key="DIALOG_HEIGHT" value="567"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="javadoc">
+		<item key="javadoc_command_history" value="C:\Eclipse\java-2023-06\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javadoc.exe"/>
+		<item key="fromStandard" value="true"/>
+		<item key="docletname" value=""/>
+		<item key="docletpath" value=""/>
+		<item key="access" value="public"/>
+		<item key="use" value="true"/>
+		<item key="author" value="true"/>
+		<item key="version" value="true"/>
+		<item key="nodeprecated" value="false"/>
+		<item key="nodeprecatedlist" value="false"/>
+		<item key="splitindex" value="true"/>
+		<item key="noindex" value="false"/>
+		<item key="notree" value="false"/>
+		<item key="nonavbar" value="false"/>
+		<item key="openinbrowser" value="false"/>
+		<item key="source" value="17"/>
+		<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\TikTakToe\javadoc.xml"/>
+		<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\TikTakToe\doc"/>
+		<section name="projects">
+			<section name="TestTwoPractice">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\TestTwoPractice\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\TestTwoPractice\javadoc.xml"/>
+			</section>
+			<section name="Exam1">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\Exam1\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\Exam1\javadoc.xml"/>
+			</section>
+			<section name="Loops">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\Loops\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\Loops\javadoc.xml"/>
+			</section>
+			<section name="TileProject">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\TileProject\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\TileProject\javadoc.xml"/>
+			</section>
+			<section name="WhileLoops">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\WhileLoops\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\WhileLoops\javadoc.xml"/>
+			</section>
+			<section name="DoubloonProject">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\DoubloonProject\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\DoubloonProject\javadoc.xml"/>
+			</section>
+			<section name="GuessingGame">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\GuessingGame\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\GuessingGame\javadoc.xml"/>
+			</section>
+			<section name="WhileLoopInClassProject">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\WhileLoopInClassProject\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\WhileLoopInClassProject\javadoc.xml"/>
+			</section>
+			<section name="FlowchartCoding2">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\FlowchartCoding2\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\FlowchartCoding2\javadoc.xml"/>
+			</section>
+			<section name="MethodsExercises">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\MethodsExercises\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\MethodsExercises\javadoc.xml"/>
+			</section>
+			<section name="Recursion">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\Recursion\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\Recursion\javadoc.xml"/>
+			</section>
+			<section name="HelloWorld">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\HelloWorld\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\HelloWorld\javadoc.xml"/>
+			</section>
+			<section name="ExamTwo">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\ExamTwo\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\ExamTwo\javadoc.xml"/>
+			</section>
+			<section name="ClassesCheckSheet">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\ClassesCheckSheet\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\ClassesCheckSheet\javadoc.xml"/>
+			</section>
+			<section name="SIClassesPractice">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\SIClassesPractice\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\SIClassesPractice\javadoc.xml"/>
+			</section>
+			<section name="WarGame">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\WarGame\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\WarGame\javadoc.xml"/>
+			</section>
+			<section name="GeometryClassesPractice">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\GeometryClassesPractice\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\GeometryClassesPractice\javadoc.xml"/>
+			</section>
+			<section name="TestOnePseudocodeDebugging">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\TestOnePseudocodeDebugging\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\TestOnePseudocodeDebugging\javadoc.xml"/>
+			</section>
+			<section name="Animals">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\Animals\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\Animals\javadoc.xml"/>
+			</section>
+			<section name="Arrays">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\Arrays\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\Arrays\javadoc.xml"/>
+			</section>
+			<section name="StringFun">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\StringFun\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\StringFun\javadoc.xml"/>
+			</section>
+			<section name="Arrays2D">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\Arrays2D\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\Arrays2D\javadoc.xml"/>
+			</section>
+			<section name="MethodTeamKai">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\MethodTeamKai\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\MethodTeamKai\javadoc.xml"/>
+			</section>
+			<section name="MultiplicationTable">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\MultiplicationTable\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\MultiplicationTable\javadoc.xml"/>
+			</section>
+			<section name="ClassesPractice">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\ClassesPractice\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\ClassesPractice\javadoc.xml"/>
+			</section>
+			<section name="FlowchartCoding">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\FlowchartCoding\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\FlowchartCoding\javadoc.xml"/>
+			</section>
+			<section name="InputCheckSheet">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\InputCheckSheet\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\InputCheckSheet\javadoc.xml"/>
+			</section>
+			<section name="Temperature Conversion">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\Temperature Conversion\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\Temperature Conversion\javadoc.xml"/>
+			</section>
+			<section name="OnesFiveByFive">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\OnesFiveByFive\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\OnesFiveByFive\javadoc.xml"/>
+			</section>
+			<section name="TikTakToe">
+				<item key="href" value="file:/C:/Users/S02590993/CSCCombo-IMaculo/TikTakToe/doc/"/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\TikTakToe\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\TikTakToe\javadoc.xml"/>
+			</section>
+			<section name="PseudocodeThree">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\PseudocodeThree\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\PseudocodeThree\javadoc.xml"/>
+			</section>
+			<section name="MethodTeamKaiEdited">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\MethodTeamKaiEdited\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\MethodTeamKaiEdited\javadoc.xml"/>
+			</section>
+			<section name="Printing">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\S02590993\CSCCombo-IMaculo\Printing\doc"/>
+				<item key="antpath" value="C:\Users\S02590993\CSCCombo-IMaculo\Printing\javadoc.xml"/>
+			</section>
+		</section>
+	</section>
 </section>

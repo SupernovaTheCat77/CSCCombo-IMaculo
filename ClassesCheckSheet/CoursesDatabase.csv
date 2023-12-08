@@ -1,0 +1,9 @@
+Course type,Course,Credits,Max students,Number of students,Room number
+In-Person,PSY101,12,214,20,3
+
+Course type,Course,Credits,Max students,Number of students,Email
+Full Remote,CSC101,32,5,54,instructor@frontrange.cccs.edu
+
+Course type,Course,Credits,Max students,Number of students,Zoom link
+Real-Time Remote,ENG101,24,4,30,https://zoom.123456789.com
+
